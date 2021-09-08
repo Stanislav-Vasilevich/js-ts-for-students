@@ -1,13 +1,12 @@
 // lesson about objects
-
-type FriendType = {
+export type FriendType = {
   age: number
   isMarried: boolean
 }
 
 type FriendsType = {
-  'Artur': FriendType
-  'Anton': FriendType
+  ['Artur']: FriendType
+  ['Anton']: FriendType
 }
 
 type AddressType = {
@@ -15,7 +14,7 @@ type AddressType = {
   street: string
 }
 
-type StudentType = {
+export type StudentType = {
   name: string
   age: number
   isActive: boolean
@@ -24,7 +23,7 @@ type StudentType = {
   friends: FriendsType
 }
 
-const student: StudentType = {
+export const student: StudentType = {
   name: 'Stanislav',
   age: 33,
   isActive: false,
@@ -34,17 +33,17 @@ const student: StudentType = {
   },
   books: ['reality transurfing', 'js for kids', 'rich dad poor dad'],
   friends: {
-    'Artur': {
+    ['Artur']: {
       age: 36,
       isMarried: true
     },
-    'Anton': {
+    ['Anton']: {
       age: 34,
       isMarried: false
     }
   }
 };
 
-console.log(student.friends.Artur.isMarried);
+console.log(student.friends['Artur'].isMarried);
 console.log(student.books[2]);
 

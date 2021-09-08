@@ -3,6 +3,10 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {addBook} from "./03_lesson/03";
+
+const a = addBook;
+console.log(a);
 
 ReactDOM.render(
   <React.StrictMode>

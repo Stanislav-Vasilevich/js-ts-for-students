@@ -4,9 +4,12 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {addBook} from "./03_lesson/03";
+import {getName} from "./01_lesson/01";
 
 const a = addBook;
 console.log(a);
+
+getName(' +Аркадий Яковлевич.. ');
 
 ReactDOM.render(
   <React.StrictMode>

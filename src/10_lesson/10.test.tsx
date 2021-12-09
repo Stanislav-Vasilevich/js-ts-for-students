@@ -65,4 +65,5 @@ test('edit title course', () => {
   // expect
   expect(user3.course).toStrictEqual(['yandex-practicum', 'it-incubator', 'lushenko']);
   expect(newCourse.course).toStrictEqual(['Ismail Yseinov', 'it-incubator', 'lushenko']);
+  expect(user3.course).toBe(['Ismail Yseinov', 'it-incubator', 'lushenko']);
 })
